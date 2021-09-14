@@ -1,26 +1,30 @@
+.header {
+  display: flex;
+  position: relative;
+}
 .nav {
   background-color: #fff;
+  height: 60px;
   display: block;
   display: flex;
-  padding: 20px;
+
   width: 100%;
   position: fixed;
   z-index: 2;
 }
 
-.icon img {
-  height: 0;
-  opacity: 0;
-}
-.nav img {
-  display: block;
-  position: relative;
-  left: 5%;
+.icon{
+  background-image: url(../img/logo.png);
+  background-size: contain;
   width: 80px;
-  align-items: center;
+  height: 35px;
+  background-repeat: no-repeat;
+  margin: 17px 5%;
+  z-index: 99;
+  position: fixed;
 }
 .nav ul {
-  width: 87%;
+  width: 97%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -37,19 +41,8 @@
 }
 
 @media screen and (max-width: 768px) {
-  .icon img {
-    opacity: 10;
-    height: 25px;
-    width: 80px;
-    position: absolute;
-    top: 20px;
-    left: 10%;
-    align-items: center;
-    z-index: 98;
-    position: fixed;
-  }
   .nav img {
-    opacity: 0;
+    opacity: 10;
     position: fixed;
   }
   nav a {

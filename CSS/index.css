@@ -1,26 +1,29 @@
+.header {
+  display: flex;
+  position: relative;
+}
 .nav {
   background-color: #fff;
+  height: 60px;
   display: block;
   display: flex;
-  padding: 20px;
+
   width: 100%;
   position: fixed;
   z-index: 2;
 }
-
-.icon img {
-  height: 0;
-  opacity: 0;
-}
-.nav img {
-  display: block;
-  position: relative;
-  left: 5%;
+.icon{
+  background-image: url(../img/logo.png);
+  background-size: contain;
   width: 80px;
-  align-items: center;
+  height: 35px;
+  background-repeat: no-repeat;
+  margin: 17px 5%;
+  z-index: 99;
+  position: fixed;
 }
 .nav ul {
-  width: 87%;
+  width: 97%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -37,21 +40,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .icon img {
-    opacity: 10;
-    height: 25px;
-    width: 80px;
-    position: absolute;
-    top: 20px;
-    left: 10%;
-    align-items: center;
-    z-index: 98;
-    position: fixed;
-  }
-  .nav img {
-    opacity: 0;
-    position: fixed;
-  }
   nav a {
     text-decoration: none;
   }
@@ -189,68 +177,66 @@
   font-size: 22px;
   font-weight: bold;
 }
-.service-btn{
+.service-btn {
   padding-top: 30px;
   text-align: center;
-  
 }
-.service-button{
+.service-button {
   background-color: rgb(212, 33, 33);
   padding: 10px 45px;
   border: 0;
 }
-.service-btn a{
+.service-btn a {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
 }
 
-@media screen and (max-width: 768px){
-  .service-menu-content{
+@media screen and (max-width: 768px) {
+  .service-menu-content {
     width: 100%;
   }
-  .service-menu{
+  .service-menu {
     display: block;
   }
-  .service-menu2{
+  .service-menu2 {
     display: block;
   }
 }
 /*news*/
-.news{
+.news {
   padding: 60px 0;
   background-color: rgb(34, 34, 34);
   width: 100%;
-  
 }
-.news-block{
+.news-block {
   width: 85%;
   margin: 0 auto;
   align-items: center;
 }
-.news-ttl{
+.news-ttl {
   display: flex;
   justify-content: space-between;
   padding-bottom: 15px;
 }
-.news-ttl h1{
+.news-ttl h1 {
   color: #fff;
   font-size: 34px;
 }
-.news-ttl button{
+.news-ttl button {
   background-color: rgb(212, 33, 33);
   padding: 10px 25px;
   border: 0;
 }
-.news-ttl a{
+.news-ttl a {
   text-decoration: none;
   color: #fff;
   font-size: 14px;
   font-weight: bold;
 }
 
-.news-content a{
+.news-content a {
   display: block;
   font-size: 16px;
   padding: 15px 0 15px 20px;
@@ -262,14 +248,14 @@
   background-color: #fff;
 }
 /*blog*/
-.blog{
+.blog {
   padding: 80px 0;
 }
-.blog-ttl{
+.blog-ttl {
   text-align: center;
   font-size: 34px;
 }
-.blog-block{
+.blog-block {
   width: 90%;
   padding: 20px 0 30px 0;
   margin: 0 auto;
@@ -282,84 +268,83 @@
 .blog-content img {
   width: 100%;
 }
-.blog-content p{
+.blog-content p {
   padding: 10px 0 10px 0;
   font-size: 12px;
 }
-.blog-content h2{
+.blog-content h2 {
   letter-spacing: 1px;
 }
-.blog-btn{
+.blog-btn {
   padding-top: 30px;
   text-align: center;
-  
 }
-.blog-button{
+.blog-button {
   background-color: rgb(212, 33, 33);
   padding: 10px 45px;
   border: 0;
 }
-.blog-btn a{
+.blog-btn a {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
 }
-@media screen and (max-width: 768px){
-  .blog-block{
+@media screen and (max-width: 768px) {
+  .blog-block {
     display: block;
   }
 }
 
 /*company*/
-.company{
+.company {
   width: 100%;
   display: flex;
 }
-.company-block{
+.company-block {
   width: 50%;
   background-color: rgb(212, 33, 33);
   text-align: center;
   padding: 80px 0;
   margin-bottom: 50px;
 }
-.company-block a{
+.company-block a {
   text-decoration: none;
   font-size: 30px;
   color: #fff;
 }
-.recruit-block{
+.recruit-block {
   width: 50%;
   background-color: rgb(32, 32, 32);
   text-align: center;
   padding: 80px 0;
   margin-bottom: 50px;
 }
-.recruit-block a{
+.recruit-block a {
   text-decoration: none;
   font-size: 30px;
   color: #fff;
 }
 
 /*問い合わせ*/
-.form-content{
+.form-content {
   margin-top: 40px;
   background-color: rgb(241, 241, 241);
   text-align: center;
   padding: 40px;
   line-height: 50px;
 }
-.form-content h1{
+.form-content h1 {
   font-size: 26px;
   letter-spacing: 2px;
 }
-.form-content p{
+.form-content p {
   font-size: 14px;
 }
-button{
+button {
   border: none;
 }
-.form-btn a{
+.form-btn a {
   text-decoration: none;
   color: #fff;
   background-color: red;
@@ -367,41 +352,40 @@ button{
 }
 
 /*フッター*/
-.footer{
+.footer {
   background-color: rgb(68, 68, 68);
   color: #fff;
   display: flex;
   padding: 20px 0;
-  font-size: 12px
+  font-size: 12px;
 }
-.footer small{
+.footer small {
   width: 160px;
   padding-left: 50px;
 }
-.footer ul{
+.footer ul {
   width: 90%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
 }
-.footer li{
+.footer li {
   padding-right: 20px;
 }
-.footer a{
-  text-decoration:none;
-  color:#fff;
+.footer a {
+  text-decoration: none;
+  color: #fff;
 }
 
-@media screen and (max-width: 768px){
-  .footer small{
+@media screen and (max-width: 768px) {
+  .footer small {
     padding: 100px 0 0 70px;
-
   }
-  .footer ul{
+  .footer ul {
     display: block;
     text-align: center;
   }
-  .footer li{
+  .footer li {
     margin-top: 20px;
   }
 }
